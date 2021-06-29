@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" id="logo">Logo</a>
+        <div id=toggle></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#jurnal">jurnal</a></li>
+                <li><a href="#team">team</a></l>
+              
+        
+            </ul>
+        </div>
+с
+    </header>
+
+    <section id="Home">Home</section>
+    <section id="About">About</section>
+    <section id="Services">Services</section>
+    <section id="contact">contact</section>
+    <section id="jurnal">jurnal</section>
+    <section id="team">team</section>
+
+
+    <script>
+        const header = document.getElementById('header')
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+
+        document.onclick = function(e){
+            if(e.target.id !=='header' && e.target.id !=='toggle' && e.target !=='navbar'){
+                toggle.classList.toggle('active');
+                navbar.classList.toggle('active');
+            }
+        }
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+            
+        }
+    </script>
+    
+</body>
+</html>
